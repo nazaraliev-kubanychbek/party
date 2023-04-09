@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,22 +20,22 @@
 <header>
     <div class="header-block">
 
-        <div class="header-bg-mg"></div>
-        <h2>Чакыруу кат</h2>
-        <p>Сиз биз үчүн эң сонун дос болдуңуз. Сиздин катышуусуз биздин үйлөнүү тоюбуз толук болбой калат. Келгиле, чогуу бакытты бөлүшөлү.</p>
+        <div data-aos="zoom-in" class="header-bg-mg"></div>
+        <h2 class="aos aos--second" data-aos="fade-down">Чакыруу кат</h2>
+        <p data-aos="fade-up">Сиз биз үчүн эң сонун дос болдуңуз. Сиздин катышуусуз биздин үйлөнүү тоюбуз толук болбой калат. Келгиле, чогуу бакытты бөлүшөлү.</p>
     </div>
 </header>
 
 <main>
 
     <section class="description">
-            <p class="description-text"><span>Тешебай</span> менен <span>Гулчапчаптын</span> баш кошуу тойуна</p>
+            <p data-aos="fade-right" class="description-text"><span>Тешебай</span> менен <span>Гулчапчаптын</span> баш кошуу тойуна</p>
     </section>
 
-    <section class="address">
-        <p>Дата: 10.10.23</p>
-        <p>Адрес: Ресторан Арзуу</p>
-        <div class="address-links">
+    <section  data-aos="fade-up" class="address">
+        <p >Дата: 10.10.23</p>
+        <p >Адрес: Ресторан Арзуу</p>
+        <div  class="address-links">
             <a href="https://www.instagram.com/kuba_duishobaevich/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://goo.gl/maps/WCfbpUb123Y1bMGcA" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>
         </div>
@@ -42,21 +43,41 @@
 </main>
 
 <footer>
-    <div class="footer-bg"></div>
-    <form>
-        <h2>Тойго келесизби?</h2>
+    <div  data-aos="zoom-in" class="footer-bg"></div>
+    <script type="text/javascript">var submitted=false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe"
+            style="display:none;" onload="if(submitted)
+{window.location='https://nazaraliev-kubanychbek.github.io/thank-page/';}"></iframe>
+    <form data-aos="fade-left" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeiWqM6EyPQ42kHoP9Av7tCHRRIoZIUZZrzF-6MucJ7UeqCQQ/formResponse"
+          method="post"
+          target="hidden_iframe" onsubmit="submitted=true;" >
+        <h2>Келесизби?</h2>
         <label>
-            <input  placeholder="Атыныз..." type="text">
+            <input required type="text" placeholder="Атыныз..." name="entry.1540780907" >
         </label>
         <label>
-            <input placeholder="Фамилияныз..." type="text">
+            <input required type="text" placeholder="Фамилияныз..." name="entry.1185769673">
         </label>
 
-        <button>келемин</button>
+        <button name="send" value="button" type="submit">келемин</button>
     </form>
+
+
+
+
+
 </footer>
 
 
 
+
+<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeiWqM6EyPQ42kHoP9Av7tCHRRIoZIUZZrzF-6MucJ7UeqCQQ/formResponse" >
+</form>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
