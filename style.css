@@ -6,35 +6,46 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #ffede5;
+    background-color: #edd6d0;
 }
 
 
 .header-block {
-    background-image: url("./img/header-bg.jpeg");
     height: 100vh;
-    background-size: cover;
-    background-position: center;
     padding-top: 100px;
     font-family: 'Lobster', cursive;
+    position: relative;
+}
+
+.header-bg-mg {
+    background-image: url("./img/header-bg.jpeg");
+    -webkit-filter: blur(5px);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    left: 0;
 }
 
 .header-block p {
     font-size: 25px;
-    /*text-shadow: 3px 4px 2px rgba(0,0,0,0.6);*/
-    /*background-color: rgba(15, 65, 125, 0.77);*/
+    z-index: 2;
     width: 400px;
     margin: 0 auto;
     text-align: center;
-    color: red;
+    color: #826577;
     font-family: 'Lato', sans-serif;
 }
 
 .header-block h2 {
     text-align: center;
     margin-bottom: 100px;
-    color: gold;
+    color: #a42e7c;
     font-size: 56px;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 .description {
@@ -44,14 +55,15 @@ body {
 
 .description-text {
     font-size: 20px;
-    color: #575757;
+    color: #5c5a67;
 }
 
 .description-text span {
     font-size: 25px;
-    color: blue;
+    color: #a42b7a;
     font-family: 'Lobster', cursive;
 }
+
 
 .address {
     text-align: center;
@@ -60,6 +72,7 @@ body {
 
 .address p {
     margin-bottom: 20px;
+    color: #5c5a67;
 }
 
 .address-links {
@@ -69,15 +82,26 @@ body {
 }
 
 .address-links a {
-    color: #575757;
+    color: #5c5a67;
     font-size: 25px;
 }
 
-footer {
-    padding: 50px 0;
-    background-image: url("./img/footer-bg.jpg");
-    height: 80vh;
+.footer-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
     background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./img/footer-bg.jpg");
+    -webkit-filter: blur(3px);
+}
+
+footer {
+    padding: 150px 0 50px;
+    height: 80vh;
+  position: relative;
 }
 
 form {
@@ -86,37 +110,39 @@ form {
     text-align: center;
 }
 
+form h2 {
+    color: #f6d4d3;
+}
+
 input {
-    border: 1px solid blue;
+    border: 1px solid #a42e7c;
     background-color: white;
     padding: 10px;
     width: 100%;
     margin-top: 10px;
     border-radius: 15px;
 }
-button{
+
+button {
     width: 100%;
-    background-color: gold;
+    background-color: #f6d4d3;
     padding: 10px 0;
     margin-top: 10px;
     border: none;
     border-radius: 15px;
+    color: #a42e7c;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1300px) {
-form h2{
-        color: gold;
-    text-shadow: 3px 4px 2px rgba(0,0,0,0.6);
-
-}
-    .header-block p{
-        text-shadow: 3px 3px 2px rgba(0,0,0,0.3);
+    .header-block p {
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
     }
 
 }
 
 @media screen and (max-width: 500px) {
-    .header-block p{
+    .header-block p {
         width: 250px;
     }
 }
